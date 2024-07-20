@@ -1,0 +1,64 @@
+﻿@*@model IEnumerable<FirstCore_webapp.Models.EmpDetails>*@
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome @ViewBag.Name</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Department</td>
+            </tr>
+        </thead>
+
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Department</td>
+
+                </tr>
+            </tbody>
+
+        }
+    </table>*@
+
+
+<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+@*<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('input[name="currency"]').change(function () {
+                const currencyType = $(this).val();
+
+                $('.amount').each(function () {
+                    const amountElement = $(this);
+                    const amount = parseFloat(amountElement.text());
+
+                    if (!isNaN(amount)) {
+                        if (currencyType === "INR") {
+                            // Convert to INR using your conversion rate
+                            const inrRate = 83; // Replace with the actual conversion rate
+                            const result = amount * inrRate;
+                            amountElement.text(result.toFixed(2));
+                        } else if (currencyType === "USD") {
+                            // Convert to USD using your conversion rate
+                            const usdRate = 83; // Replace with the actual conversion rate
+                            const result = amount / usdRate;
+                            amountElement.text(result.toFixed());
+                        }
+                    }
+                });
+            });
+        });
+
+    </script>*@
