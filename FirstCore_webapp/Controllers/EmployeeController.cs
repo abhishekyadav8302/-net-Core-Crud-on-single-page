@@ -62,12 +62,12 @@ namespace FirstCore_webapp.Controllers
 
             if (employeeId == null)
             {
-                employee = await _context.Employees.FindAsync(1);
-                if (employee.EmpList == null)
-                {
-                    employee.EmpList = new List<EmployeeList>();
-                }
-                employee.EmpList.AddRange(EmployeeList);
+                //employee = await _context.Employees.FindAsync(1);
+                //if (employee.EmpList == null)
+                //{
+                //    employee.EmpList = new List<EmployeeList>();
+                //}
+                //employee.EmpList.AddRange(EmployeeList);
                 return View(employee);
             }
             else
